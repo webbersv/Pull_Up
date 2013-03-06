@@ -1,23 +1,40 @@
 package com.example.pullup;
 
+//import com.examle.qwe.R;
+
+//import com.examle.qwe.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+//import android.widget.RelativeLayout;
 
 
 public class Training extends Activity implements OnClickListener{
 	
 	protected int a;
 	
-	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK) {
+			Intent intent2 = new Intent(Training.this, Main.class);
+			finish();
+			startActivity(intent2);
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.training);
+		
+		
 		
 		ImageButton ibut1 = (ImageButton) findViewById(R.id.ImageButton1);
 		ibut1.setOnClickListener(this);
@@ -47,47 +64,56 @@ public class Training extends Activity implements OnClickListener{
 			
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=1);
+			finish();
 			startActivity(intent1);
 			
 		}
 		if (v.getId()==R.id.imageButton2){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=2);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton3){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=3);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton4){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=4);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton5){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=5);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton6){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=6);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton7){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=7);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton8){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=8);
+			finish();
 			startActivity(intent1);
 		}
 		if (v.getId()==R.id.imageButton9){
 			Intent intent1 = new Intent(Training.this, Start.class);
 			intent1.putExtra("a", a=9);
+			finish();
 			startActivity(intent1);
 		}
 	}

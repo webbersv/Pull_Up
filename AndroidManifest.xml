@@ -25,31 +25,31 @@
             </intent-filter>
         </activity>
          <activity android:name="About"
-             android:theme="@android:style/Theme.Dialog"/>         
+             android:theme="@android:style/Theme.Dialog"/>    
          <activity android:name="Training"
              android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Start"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/> 
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/> 
          <activity android:name="Level_1"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_2"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_3"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_4"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_5"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_6"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_7"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_8"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Level_9"
-             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+             android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Timer"
-         	android:theme="@android:style/Theme.Dialog"/>
+         	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Finish"
          	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>  
     </application>
