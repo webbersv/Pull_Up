@@ -23,6 +23,7 @@ public class Level_1 extends Activity {
 	}
 	
 	protected int t;
+	protected int r;
 	public RelativeLayout level;
 
 	protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,7 @@ public class Level_1 extends Activity {
 					if (p==4)
 						{Intent intent1 = new Intent(Level_1.this, Finish.class);
 						finish();
+						intent1.putExtra("res", r==4);
 						startActivity(intent1);} // поставить 4 картинку и переходим на финиш
 							
 						else

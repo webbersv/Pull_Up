@@ -52,5 +52,7 @@
          	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
          <activity android:name="Finish"
          	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>  
+         <activity android:name="Result"
+         	android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
     </application>
    </manifest>

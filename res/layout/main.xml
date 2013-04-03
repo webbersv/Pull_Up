@@ -16,7 +16,11 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="340dp"
-        android:text="@string/button4name" />
+        android:background="@drawable/but"
+        android:text="@string/button4name"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button1"
@@ -27,8 +31,12 @@
         android:layout_below="@+id/button3"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/button1name" />
+        android:layout_marginTop="34dp"
+        android:background="@drawable/but"
+        android:text="@string/button1name"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button2"
@@ -39,7 +47,11 @@
         android:layout_below="@+id/button1"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="17dp"
-        android:text="@string/button3name" />
+        android:layout_marginTop="33dp"
+        android:background="@drawable/but"
+        android:text="@string/button3name"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

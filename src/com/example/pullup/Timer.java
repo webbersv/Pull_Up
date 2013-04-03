@@ -1,14 +1,23 @@
 package com.example.pullup;
 
+
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Timer extends Activity {
+	
+	  private static final int MILLIS_PER_SECOND = 1000;
+	  private static final int SECONDS_TO_COUNTDOWN = 40;
+	  private TextView countdownDisplay;
+	  private CountDownTimer timer;
 	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -27,6 +36,32 @@ public class Timer extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.timer);
+		
+		
+		countdownDisplay = (TextView) findViewById(R.id.time_display_box);
+	    Button startButton = (Button) findViewById(R.id.startbutton);
+	    startButton.setOnClickListener(new View.OnClickListener() {
+	      public void onClick(View view) {
+	       
+	          showTimer(SECONDS_TO_COUNTDOWN * MILLIS_PER_SECOND);
+	        
+	      }
+
+	      private void showTimer(int countdownMillis) {
+	    	  if(timer != null) { timer.cancel(); }
+	    	  timer = new CountDownTimer(countdownMillis, MILLIS_PER_SECOND) {
+	    	  @Override
+	    	  public void onTick(long millisUntilFinished) {
+	    	    countdownDisplay.setText("left: " + millisUntilFinished / MILLIS_PER_SECOND);
+	    	   	  }
+	    	  @Override
+	    	    public void onFinish() {
+	    	      countdownDisplay.setText("Proceed!");
+	    	    }
+	    	  }.start();
+	    	}
+	    });
+	    
 		
 		Button but1 = (Button) findViewById(R.id.button1);
 	       but1.setOnClickListener(new OnClickListener(){
