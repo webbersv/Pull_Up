@@ -18,6 +18,7 @@ import android.content.Intent;
 public class About extends Activity {
 	
 	
+	
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
@@ -37,6 +38,9 @@ public class About extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.about);
 		
+		MediaPlayer mp1 = MediaPlayer.create(About.this, R.raw.med);
+		mp1.start();
+		
 		final Button but1 = (Button) findViewById(R.id.button1);
 		but1.setOnClickListener(new OnClickListener() {
 			
@@ -45,8 +49,8 @@ public class About extends Activity {
 				// TODO Auto-generated method stub
 				Animation anim1 = AnimationUtils.loadAnimation(About.this, R.anim.tweenanimation);
 				but1.startAnimation(anim1);
-				MediaPlayer mp1 = MediaPlayer.create(About.this, R.raw.mel1);
-				mp1.start();
+				//MediaPlayer mp1 = MediaPlayer.create(About.this, R.raw.mel2);
+				//mp1.start();
 			}
 		});
 		

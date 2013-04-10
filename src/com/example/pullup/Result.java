@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class Result extends Activity {
 
 	
-	//private int r;
+	private int r;
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -27,16 +27,16 @@ public class Result extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.result);
 		
-		Integer res = getIntent().getIntExtra("res", 1);
+		Integer res = getIntent().getIntExtra("res", r);
 		
 		
 		
 		TextView text1 = (TextView) findViewById(R.id.editText1);
-		//text1.setText("sdfsdf");
+		text1.setText(res);
 		//Integer res = getIntent().getExtras().getInt("res");
 		
-		res ++;
-		text1.setText(res.toString());
+		//res ++;
+		//text1.setText(res.toString());
 		
 }
 }

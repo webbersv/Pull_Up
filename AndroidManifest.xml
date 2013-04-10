@@ -28,6 +28,7 @@
              android:theme="@android:style/Theme.Dialog"/>    
          <activity android:name="Training"
              android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+         <activity android:name="Preferense"/>
          <activity android:name="Start"
              android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/> 
          <activity android:name="Level_1"

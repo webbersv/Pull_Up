@@ -24,6 +24,7 @@ public class Main extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				Intent intent1 = new Intent(Main.this, About.class);
+				//finish();
 				startActivity(intent1);
 			}
 		});

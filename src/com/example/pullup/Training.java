@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 //import android.widget.RelativeLayout;
 
@@ -34,7 +35,19 @@ public class Training extends Activity implements OnClickListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.training);
 		
-		
+		 Button but1 = (Button) findViewById(R.id.button1);
+	        but1.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					Intent intent1 = new Intent(Training.this,Preferense.class);
+					finish();
+					startActivity(intent1);
+					
+					
+				}
+			});
 		
 		ImageButton ibut1 = (ImageButton) findViewById(R.id.ImageButton1);
 		ibut1.setOnClickListener(this);
